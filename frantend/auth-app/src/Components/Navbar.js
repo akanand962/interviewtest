@@ -27,7 +27,7 @@ export default function Navbar() {
                   fontWeight: "bold",
                   color: "blue",
                 }}
-               exact to="/home"
+               exact to="/"
               >
                 Home{" "}
               </NavLink>
@@ -45,6 +45,20 @@ export default function Navbar() {
                 About{" "}
               </NavLink>
             </li>
+
+            <li>
+              <NavLink
+                className="nav-link"
+                activeStyle={{
+                  fontWeight: "bold",
+                  color: "blue",
+                }}
+               exact to="/dashboard"
+              >
+                Dashroard{" "}
+              </NavLink>
+            </li>
+          {!localStorage.getItem('login')?<>
             <li>
               <NavLink
                 className="nav-link"
@@ -68,7 +82,7 @@ export default function Navbar() {
               >
                 Register{" "}
               </NavLink>
-            </li>
+            </li></>:''}
           </ul>
         </div>
       </nav>

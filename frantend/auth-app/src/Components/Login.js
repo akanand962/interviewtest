@@ -38,17 +38,7 @@ export default function Login() {
       }
     })
  })
-  //   .then(response => response.json()) 
-    
-  //   .then(response =>{
-  //       if(response.length>0){
-  //           localStorage.setItem('login',JSON.stringify(response))
-  //           history.push('/dashboard')
-  //       }
-  //       else{
-  //           alert('Plz Check user name and password Again...')
-  //       }
-  //   }); 
+
     
 
       
