@@ -22,7 +22,7 @@ function App() {
         <Route exact path='/login'  component={Login} />
         <Route exact path='/register' component={Register} />
 
-        <Protected  component = {Dashboard}/>
+        <Protected exact  Comp = {Dashboard}/>
         <Route  component={NotFound} />
 
       </Switch>
